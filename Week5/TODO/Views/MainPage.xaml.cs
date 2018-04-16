@@ -8,6 +8,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using TODO.Models;
 using TODO.Services;
 using TODO.ViewModels;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -41,7 +43,8 @@ namespace TODO
         public int SelectedIndex;
         public string ImageUrl;
         public int DetailMode = 1; // 1为new，0为Detail
-        
+        DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -248,6 +251,7 @@ namespace TODO
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+            dataTransferManager.DataRequested += DataRequested;
             if (e.NavigationMode == NavigationMode.New)
             {
                 ApplicationData.Current.LocalSettings.Values.Remove("MainPage");
@@ -273,6 +277,7 @@ namespace TODO
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
+            dataTransferManager.DataRequested -= DataRequested;
             if (((App)App.Current).IsSuspend)
             {
                 ApplicationDataCompositeValue composite = new ApplicationDataCompositeValue();
@@ -315,5 +320,51 @@ namespace TODO
                 updater.Update(notification);
             }            
         }
+
+        private string sharetitle, sharedetail, sharedate;
+        private StorageFile shareimg;
+        private async void shareOneItem(object sender, RoutedEventArgs e)
+        {
+            var dc = (sender as FrameworkElement).DataContext;
+            var item = (MainListView.ContainerFromItem(dc) as ListViewItem).Content as TodoItem;
+            sharetitle = item.Title;
+            sharedetail = item.Description;
+            string shareimgname = item.ImageUrl;
+            var date = item.DueDate.Date;
+            sharedate = "\nDue date: " + date.Year + '-' + date.Month + '-' + date.Day;
+            if (shareimgname == "")
+            {
+                shareimg = await Package.Current.InstalledLocation.GetFileAsync("Assets\\icons8-task-50.png");
+            }
+            else
+            {
+                shareimg = await ApplicationData.Current.LocalFolder.GetFileAsync(shareimgname);
+            }
+            DataTransferManager.ShowShareUI();
+        }
+
+        private void DataRequested(DataTransferManager sender, DataRequestedEventArgs e)
+        {
+            Debug.WriteLine(e.Request.ToString());
+            DataRequest request = e.Request;
+            DataPackage requestData = request.Data;
+            requestData.Properties.Title = sharetitle;
+            requestData.SetText(sharedetail + sharedate);
+
+            // Because we are making async calls in the DataRequested event handler,
+            //  we need to get the deferral first.
+            DataRequestDeferral deferral = request.GetDeferral();
+
+            // Make sure we always call Complete on the deferral.
+            try
+            {
+                requestData.SetBitmap(RandomAccessStreamReference.CreateFromFile(shareimg));
+            }
+            finally
+            {
+                deferral.Complete();
+            }
+        }
+
     }
 }

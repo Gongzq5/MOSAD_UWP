@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Gongzq5\source\repos\TODO\TODO\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>1115810971AEAFD748C754BE999CC18753BF3F0BBCA5EB36A3366FDA66A0AFDA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>D0D87B55852F73362E67AFE0CF2727D612EE4748653E079E2242EB46F4C3E593</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>a92929c3-01aa-44f4-b49e-ae165fe15622_1.0.0.0_x86__ywnrq4ser8afe</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>a92929c3-01aa-44f4-b49e-ae165fe15622_ywnrq4ser8afe!App</RegisteredUserModeAppID>
     <RegisteredPackageID>a92929c3-01aa-44f4-b49e-ae165fe15622</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Gongzq5\source\repos\TODO\TODO\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-16T08:47:33.755</Modified>
+      <Modified>2018-04-16T15:23:32.181</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Gongzq5\source\repos\TODO\TODO\bin\x86\Debug\TODO.exe">
       <PackagePath>entrypoint\TODO.exe</PackagePath>
-      <Modified>2018-04-16T08:47:33.128</Modified>
+      <Modified>2018-04-16T15:23:31.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -198,6 +198,10 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\runtime.win7.system.private.uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2016-07-01T06:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gongzq5\.nuget\packages\sqlitepcl\3.8.7.2\lib\netcore451\SQLitePCL.dll">
+      <PackagePath>SQLitePCL.dll</PackagePath>
+      <Modified>2014-12-09T03:04:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\system.appcontext\4.1.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -495,6 +499,14 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T14:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UWP.2015\3.23.1\Redist\Debug\x86\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2018-04-16T08:50:22.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Gongzq5\.nuget\packages\sqlitepcl\3.8.7.2\build\netcore451\SQLitePCL.Ext.dll">
+      <PackagePath>SQLitePCL.Ext.dll</PackagePath>
+      <Modified>2014-12-09T03:04:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gongzq5\source\repos\TODO\TODO\Assets\icons8-task-50.png">
       <PackagePath>Assets\icons8-task-50.png</PackagePath>
       <Modified>2018-04-12T04:59:26.297</Modified>
@@ -734,7 +746,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gongzq5\source\repos\TODO\TODO\bin\x86\Debug\TODO.xr.xml">
       <PackagePath>TODO.xr.xml</PackagePath>
-      <Modified>2018-04-15T15:50:26.034</Modified>
+      <Modified>2018-04-16T15:22:55.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -743,11 +755,11 @@
     <AppxPackagedFile Include="C:\Users\Gongzq5\source\repos\TODO\TODO\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-16T05:23:44.408</Modified>
+      <Modified>2018-04-16T15:23:31.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Gongzq5\source\repos\TODO\TODO\bin\x86\Debug\Core\TODO.exe">
       <PackagePath>TODO.exe</PackagePath>
-      <Modified>2018-04-16T08:47:33.751</Modified>
+      <Modified>2018-04-16T15:23:32.173</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
