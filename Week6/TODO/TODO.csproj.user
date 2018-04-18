@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</Source>
+    <SmallTileSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</MediumTileSource>
+    <WideTileSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</WideTileSource>
+    <LargeTileSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</LargeTileSource>
+    <AppIconSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Gongzq5\Desktop\icons8-todo-list-64.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>
