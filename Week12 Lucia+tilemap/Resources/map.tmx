@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="2018.06.01" orientation="orthogonal" renderorder="right-down" width="24" height="16" tilewidth="32" tileheight="32" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="map.tsx"/>
+ <layer id="1" name="块层 1" width="24" height="16">
+  <data encoding="base64" compression="zlib">
+   eJwN0kdbCAAAANB82VEhGddIEspIXM1ISCFXhcyiiCtJRAjJVbaUGV2NrEgy6mpFCiXk5B3eP3iBAQEBvelDX/rRnwEMJIhBDCaYEEIZwlCGEcZwwhnBSEYxmgjGMJZIxhHFeKKZQAwTmcRkYoljClOZxnTimUECM5nFbOYwl3nMZwGJLGQRSSwmmSUsZRkpLCeVNFawklWks5o1ZJDJWtaxniw2sJFNbGYLW8kmh21sJ5c8drCTfHaxmz3spYB9FLKfIg5wkGIOcZgSjnCUY5RynBOcpIxTlHOaM1RwlnOc5wIXucRlrlDJVaqo5hrXucFNbnGbGu5wl1rucZ8HPKSORzzmCU95Rj3PeUEDL2nkFU285g1veUczLbznAx/5xGda+cJX2vhGOx185wc/6aSLX3Tzmz/8pYd/BPbynz70pR/9GcBAghjEYIIJIZQhDGUYYQwnnBGMZBSjiWAMY4lkHFGMJ5oJxDCRSUwmljimMJVpTCeeGSQwk1nMZg5zmcd8FpDIQhaRxGKSWcJSlpHCclJJYwUrWUU6q1lDBpmsZR3ryWIDG9nEZrawlWxy2MZ2csljBzvJZxe72cNeCthHIfsp4gAHKeYQhynhCEc5RinHOcFJyjhFOac5QwVnOcd5LnCRS1zmCpVcpYpqrnGdG9zkFrep4Q53qeUe93nAQ+p4xGOe8JRn1POcFzTwkkZe0cRr3vCWdzTTwns+8JFPfKaVL3yljW+008F3fvCTTrr4RTe/+cNfevjHf16kvoE=
+  </data>
+ </layer>
+</map>
